@@ -49,8 +49,8 @@ body, html{
 }
 .icon{
   position: fixed;
-  max-height: 5%;
-  max-width: 5%;
+  max-height: 10%;
+  max-width: 10%;
   z-index: 1;
 }
 button{
@@ -89,8 +89,12 @@ button{
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
   z-index: 1;
+}
+.teach{
+  font-size: 15px;
 }
 
 .dropdown-content a {
@@ -105,6 +109,12 @@ button{
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.dropdown:hover .teacher-dropdown{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 300px;
 }
 ul{
   color: #2D9469;
@@ -179,7 +189,7 @@ li:first-child{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px;
     display: block;
-    height: 500px;
+    height: 700px;
     margin: 20px;
     transition: 0.3s;
     width: 40%;
@@ -197,8 +207,15 @@ li:first-child{
   .card-img {
     border-bottom: 1px solid #199393;
     border-radius: 5px 5px 0 0;
-    max-height: 90%;
-    max-width: 90%;
+    margin-top: 10px;
+    max-height: 80%;
+    max-width: 80%;
+  }
+  .card-img-school {
+    border-bottom: 1px solid #199393;
+    border-radius: 5px 5px 0 0;
+    max-height: 100%;
+    max-width: 100%;
   }
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -222,6 +239,7 @@ h4{
   color: #199393;
   font-family: Heading;
   margin-bottom: 0;
+  font-size: 30px;
 }
 p {
   color: #7A7A7A;
@@ -229,7 +247,9 @@ p {
   font-size: 20px;
 }
 .quote{
-  font-size: 80%;
+  font-size: 30px;
+  word-wrap: break-word;
+  margin: 2px
 }
 /*Colors*/
 .blue{
